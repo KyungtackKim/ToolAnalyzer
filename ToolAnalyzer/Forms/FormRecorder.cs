@@ -264,8 +264,7 @@ namespace ToolAnalyzer.Forms
             // change state
             WorkState.ChangeState(WorkerManager.WorkingState.Offset);
             // get folder path
-            var folder = Path.Combine(tbWavPath.Text, tbModel.Text.Trim(), tbSerial.Text.Trim(),
-                $@"{DateTime.Now:yyyyMMdd}");
+            var folder = Path.Combine(tbWavPath.Text, tbModel.Text.Trim(), tbSerial.Text.Trim());
             // check exists
             if (!Directory.Exists(folder))
                 // create folder
